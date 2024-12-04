@@ -60,7 +60,7 @@
         <p>Hummingbirds are cute, but don't get in the way of their food.</p>
     </div>
         
-    <div class="creature" data-home="land" data-creature-type="animal">    
+    <div class="creature" data-home="land" data-creature-type="insect">    
         <img src="images/spider.png" alt="spider">
         <h3>Spiders</h3>
     <p>Spiders are not cute, in fact they creep me out.</p>
@@ -79,7 +79,7 @@
         <p>Fish are not cute, but they taste good!</p>
     </div>
         
-    <div class="creature" data-home="land" data-creature-type="animal">    
+    <div class="creature" data-home="land" data-creature-type="insect">    
         <img src="images/stinkbug.png" alt="stinkbug">
         <h3>Stink Bug</h3>
         <p>Stinkbugs are not cool!  Don't touch them!</p>
@@ -144,7 +144,7 @@
 
             const myNodeList = document.querySelectorAll("div.creature");
                 for(let x=0;x<myNodeList.length;x++){
-                    const myType = myNodeList[x].creatureType;
+                    const myType = myNodeList[x].dataset.creatureType;
 
                     switch(myType){
                         case "animal":
