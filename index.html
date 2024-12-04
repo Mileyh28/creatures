@@ -118,13 +118,13 @@
 
                         break;
 
-                        case "air":
-                            myNodeList[x].style.backgroundColor = "yellow";
+                        case "water":
+                            myNodeList[x].style.backgroundColor = "blue";
 
                         break;
 
-                        case "water":
-                            myNodeList[x].style.backgroundColor = "blue";
+                        case "air":
+                            myNodeList[x].style.backgroundColor = "yellow";
 
                         break;
                     }
@@ -174,11 +174,13 @@
 
             const myNodeList = document.querySelectorAll("div.creature");
                 for(let x=0;x<myNodeList.length;x++){
-                    const myType = myNodeList[x].creatureType;
+                        myNodeList[x].style.backgroundColor = "white";
+                        myNodeList[x].style.border = "2px solid black";
 
 
                     }
-            alert("clearAll()");
+
+                    
         }//end clearAll()
 
     </script>    
